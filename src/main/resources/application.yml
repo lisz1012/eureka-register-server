@@ -5,6 +5,8 @@ server:
 eureka:
   instance:
     hostname: registrar
+    metadata-map:
+      dalao: lisz
   client:
     register-with-eureka: false
     fetch-registry: false
