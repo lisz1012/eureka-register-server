@@ -18,3 +18,7 @@ eureka:
 spring:
   application:
     name: Eureka
+  security:
+    user:
+      name: lisz
+      password: 666
