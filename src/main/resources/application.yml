@@ -4,14 +4,16 @@ server:
 
 eureka:
   instance:
-    hostname: registrar
+#    hostname: registrar     #  docker环境用这个配置
+    hostname: localhost
     metadata-map:
       dalao: lisz
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://registrar:7900/eureka/
+#      defaultZone: http://registrar:7900/eureka/  # docker环境用这个配置
+      defaultZone: http://localhost:7900/eureka/
 
 spring:
   application:
